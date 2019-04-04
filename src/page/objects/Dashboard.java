@@ -152,7 +152,8 @@ public class Dashboard {
 	}
 
 	public static void sendKeysCtrlATitle(WebDriver driver) {
-		getChangeTitle(driver).sendKeys(Keys.chord(Keys.CONTROL,"a",Keys.DELETE));
+		getChangeTitle(driver).sendKeys(Keys.chord(Keys.CONTROL,"a"));
+		getChangeTitle(driver).sendKeys(Keys.DELETE);
 	}
 
 	public static void sendKeysChangeTitle(WebDriver driver, String tekst) {
@@ -170,7 +171,8 @@ public class Dashboard {
 	}
 
 	public static void sendKeysCtrlALocation(WebDriver driver) {
-		getChangeLocation(driver).sendKeys(Keys.chord(Keys.CONTROL,"a",Keys.DELETE));
+		getChangeLocation(driver).sendKeys(Keys.chord(Keys.CONTROL,"a"));
+		getChangeLocation(driver).sendKeys(Keys.DELETE);
 	}
 
 	public static void sendKeysChangeLocation(WebDriver driver, String tekst) {
